@@ -25,9 +25,7 @@ export const useApi = () => {
         if (currentUser) {
           config.headers = config.headers || {};
           config.headers["Audit_user_id"] = currentUser._id;
-          if (currentUser.token) {
-            config.headers["Authorization"] = `Bearer ${currentUser.token}`;
-          }
+
         }
         return config;
       },
