@@ -56,7 +56,7 @@ export const useApi = () => {
           localStorage.removeItem("token");
           localStorage.removeItem("user");
 
-          window.location.href = "/auth/signin";
+          window.location.href = `${window.location.origin}/auth/signin`;
         }
 
         return Promise.reject(error);
