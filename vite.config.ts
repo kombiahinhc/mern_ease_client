@@ -10,7 +10,6 @@ export default defineConfig({
         target: 'https://mern-admin-chakra-ui.vercel.app',
         changeOrigin: true,
         secure: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
       },
     },
   },

@@ -53,6 +53,9 @@ export const useApi = () => {
 
         if (error.response && error.response.status === 401) {
           console.warn("Session expired or unauthorized. Redirecting to login...");
+          console.log("401 ERROR URL:", error.config?.url);
+          console.log("401 REQUEST HEADERS:", error.config?.headers);
+          console.log("401 RESPONSE:", error.response?.data);
 
           localStorage.removeItem("persist:root");
           localStorage.removeItem("token");
