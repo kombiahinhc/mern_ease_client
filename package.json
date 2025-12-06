@@ -2,6 +2,7 @@
   "name": "tailadmin-react",
   "private": true,
   "version": "2.0.2",
+  "homepage": "https://seagreen-badger-142308.hostingersite.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",
