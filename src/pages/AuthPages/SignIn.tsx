@@ -75,7 +75,7 @@ function InnerSignInForm() {
     setIsLoading(true);
 
     try {
-      const res = await api.post(`/api/auth/signin`, formData);
+      const res = await api.post(`/auth/signin`, formData);
 
       if (res.status === 200 && res.data) {
         dispatch(signInSuccess(res.data));

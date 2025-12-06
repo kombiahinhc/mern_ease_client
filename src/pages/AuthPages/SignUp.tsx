@@ -65,7 +65,7 @@ function InnerSignUpForm() {
       startRequest();
       setLoading(true);
       
-      const res = await api.post("/api/auth/signup", formData);
+      const res = await api.post("/auth/signup", formData);
 
       if (res.status === 200) {
         coloredToast("success", "Account created successfully!");

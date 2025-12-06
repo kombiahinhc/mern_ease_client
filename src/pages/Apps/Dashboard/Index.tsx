@@ -83,7 +83,7 @@ const Dashboard = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const response = await api.get("/api/dashboard/getdata");
+      const response = await api.get("/dashboard/getdata");
       if (response.data?.success) {
         const d = response.data.data || {};
 
